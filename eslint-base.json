@@ -2,6 +2,7 @@
     "extends": "eslint:recommended",
     "rules": {
         "no-cond-assign": "warn",
+        "no-constant-condition": "warn",
         "no-empty": [
             "error",
             {
@@ -9,18 +10,32 @@
             }
         ],
         "no-ex-assign": "warn",
-        "no-extra-parens": "error",
+        "no-extra-parens": [
+            "error",
+            "all",
+            {
+                "nestedBinaryExpressions": false
+            }
+        ],
         "valid-jsdoc": [
             "error",
             {
+                "requireReturn": false,
+                "requireParamDescription": false,
+                "requireReturnDescription": false,
                 "prefer": {
                     "return": "returns"
+                },
+                "preferType": {
+                    "String": "string",
+                    "Number": "number",
+                    "Boolean": "boolean",
+                    "object": "Object"
                 }
             }
         ],
         "array-callback-return": "error",
         "block-scoped-var": "error",
-        "consistent-return": "error",
         "curly": "error",
         "default-case": "warn",
         "dot-location": [
@@ -68,9 +83,7 @@
             "global"
         ],
         "no-label-var": "error",
-        "no-undefined": "error",
         "no-unused-vars": "warn",
-        "no-use-before-define": "error",
         "handle-callback-err": [
             "warn",
             "^(?:e|err|error)$"
@@ -106,9 +119,13 @@
         "max-statements-per-line": "error",
         "new-cap": "error",
         "new-parens": "error",
-        "newline-per-chained-call": "error",
+        "newline-per-chained-call": [
+            "error",
+            {
+                "ignoreChainWithDepth": 3
+            }
+        ],
         "no-array-constructor": "error",
-        "no-inline-comments": "error",
         "no-lonely-if": "error",
         "no-multiple-empty-lines": [
             "error",
@@ -134,7 +151,10 @@
         ],
         "one-var-declaration-per-line": "error",
         "operator-assignment": "error",
-        "operator-linebreak": "error",
+        "operator-linebreak": [
+            "error",
+            "after"
+        ],
         "padded-blocks": [
             "error",
             "never"
