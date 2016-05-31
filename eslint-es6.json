@@ -1,0 +1,27 @@
+{
+    "extends": "./eslint-base.json",
+    "rules": {
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "arrow-spacing": "error",
+        "constructor-super": "error",
+        "generator-star-spacing": "error",
+        "no-this-before-super": "error",
+        "no-useless-computed-key": "error",
+        "no-useless-constructor": "error",
+        "no-useless-rename": "error",
+        "template-curly-spacing": "error",
+        "yield-star-spacing": [
+            "error",
+            "before"
+        ],
+        "prefer-arrow-callback": "error",
+        "prefer-template": "error",
+        "prefer-spread": "error",
+        "prefer-rest-params": "error",
+        "object-shorthand": "error",
+        "no-var": "error"
+    }
+}
