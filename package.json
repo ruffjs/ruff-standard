@@ -2,7 +2,7 @@
     "name": "ruff-standard",
     "description": "Ruff Coding Standard",
     "author": "Ruff",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "peerDependencies": {
         "eslint": "^2.11.1"
     }

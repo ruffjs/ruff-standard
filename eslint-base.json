@@ -43,7 +43,7 @@
             "property"
         ],
         "eqeqeq": "error",
-        "guard-for-in": "error",
+        "guard-for-in": "warn",
         "no-eval": "warn",
         "no-extra-label": "error",
         "no-floating-decimal": "error",
@@ -101,7 +101,10 @@
         "eol-last": "error",
         "func-style": [
             "error",
-            "declaration"
+            "declaration",
+            {
+                "allowArrowFunctions": true
+            }
         ],
         "indent": [
             "error",
@@ -111,6 +114,7 @@
             }
         ],
         "jsx-quotes": "error",
+        "key-spacing": "error",
         "keyword-spacing": "error",
         "linebreak-style": [
             "error",
