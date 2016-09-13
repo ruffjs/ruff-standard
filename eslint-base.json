@@ -58,7 +58,7 @@
         "valid-typeof": "error",
         "accessor-pairs": "off",
         "array-callback-return": "error",
-        "block-scoped-var": "error",
+        "block-scoped-var": "warn",
         "complexity": "off",
         "consistent-return": "error",
         "curly": "error",
