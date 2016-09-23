@@ -1,0 +1,15 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": "./eslint-base.json",
+    "globals": {
+        // t.
+        "describe": true,
+        "it": true,
+        "before": true,
+        "after": true,
+        "beforeEach": true,
+        "afterEach": true
+    }
+}
